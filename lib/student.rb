@@ -36,6 +36,7 @@ class Student
   end
   
   def self.create(attributes)
+    binding.pry
     attributes.each {|key,value| student.send("#{key}=", value)}
   end
 end
