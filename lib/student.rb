@@ -36,7 +36,7 @@ class Student
   end
   
   def self.create(attributes)
-    student = Student.new(attributes[0], attributes[1])
+    student = Student.new(attributes[:id], attributes[:name])
     student.save
   end
 end
